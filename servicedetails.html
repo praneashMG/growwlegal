@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service details - Groww Legal</title>
+    <link rel="icon" href="images/logo.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* RTL */
+        .rtl {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .title {
+            margin-right: 20px !important;
+        }
+
+        /* THEME TOGGLE */
+        :root {
+            --home-bg: #ffffff;
+            --text-color: #111111;
+        }
+
+        [data-theme="dark"] {
+            --home-bg: #000000;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--home-bg) !important;
+            color: var(--text-color);
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        [data-theme="dark"] section,
+        [data-theme="dark"] .card {
+            background-color: #000000 !important;
+        }
+
+        [data-theme="dark"] .btn,
+        [data-theme="dark"] .btn1:hover {
+            color: #000000 !important;
+        }
+
+        [data-theme="dark"] body,
+        [data-theme="dark"] p,
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] span,
+        [data-theme="dark"] li,
+        [data-theme="dark"] a,
+        [data-theme="dark"] label,
+        [data-theme="dark"] small,
+        [data-theme="dark"] strong {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- navbar -->
+    <div id="navbar"></div>
+    <!-- HERO BANNER -->
+    <section class="relative h-[80vh] w-full bg-cover bg-center flex items-center justify-center text-center"
+        style="background-image: url('images/bg6.avif');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[#0F172A]/85"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl px-6">
+
+            <!-- Title -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F8FAFC] leading-tight">
+                Corporate Legal Services
+            </h1>
+
+            <!-- Description -->
+            <p class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
+                Strategic legal solutions for businesses, startups, and enterprises.
+                Ensuring compliance, protection, and sustainable growth.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html"
+                    class="btn bg-[#F8FAFC] text-[#0F172A] px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                    Book a Consultation
+                </a>
+
+                <a href="contact.html"
+                    class="btn1 border border-[#F8FAFC] text-[#F8FAFC] px-8 py-3 rounded-lg font-semibold hover:bg-[#F8FAFC] hover:text-[#0F172A] transition">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- SECTION1 -->
+    <section class="bg-[#F8FAFC] py-20">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- SECTION HEADER -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A]">
+                    Our Legal Services
+                </h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    In-depth legal solutions delivered with professionalism, clarity,
+                    and trusted expertise.
+                </p>
+            </div>
+
+            <!-- CARDS GRID -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                <!-- CARD 1 -->
+                <div class="card group bg-white rounded-xl border overflow-hidden
+                  transition-all duration-300 ease-out
+                  hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="overflow-hidden">
+                        <img src="images/pic1.avif" alt="Corporate Law" class="h-64 w-full object-cover
+                      transition-transform duration-500
+                      group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#0F172A] mb-4">
+                            Corporate Law
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Strategic legal support for businesses, startups, and enterprises
+                            to ensure compliance and sustainable growth.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Company incorporation & structuring</li>
+                            <li>✔ Contract drafting & negotiation</li>
+                            <li>✔ Compliance & regulatory advisory</li>
+                            <li>✔ Mergers & acquisitions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card group bg-white rounded-xl border overflow-hidden
+                  transition-all duration-300 ease-out
+                  hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="overflow-hidden">
+                        <img src="images/pic2.webp" alt="Family Law" class="h-64 w-full object-cover
+                      transition-transform duration-500
+                      group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#0F172A] mb-4">
+                            Family Law
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Compassionate legal assistance for sensitive family matters,
+                            handled with care and confidentiality.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Divorce & separation</li>
+                            <li>✔ Child custody & maintenance</li>
+                            <li>✔ Domestic dispute resolution</li>
+                            <li>✔ Family settlement agreements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card group bg-white rounded-xl border overflow-hidden
+                  transition-all duration-300 ease-out
+                  hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="overflow-hidden">
+                        <img src="images/pic3.avif" alt="Property Law" class="h-64 w-full object-cover
+                      transition-transform duration-500
+                      group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#0F172A] mb-4">
+                            Property Law
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Expert legal guidance for property transactions and dispute
+                            resolution to protect your investments.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Property buying & selling</li>
+                            <li>✔ Title verification</li>
+                            <li>✔ Property dispute handling</li>
+                            <li>✔ Lease & rental agreements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card group bg-white rounded-xl border overflow-hidden
+                  transition-all duration-300 ease-out
+                  hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="overflow-hidden">
+                        <img src="images/pic4.avif" alt="Legal Documentation" class="h-64 w-full object-cover
+                      transition-transform duration-500
+                      group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#0F172A] mb-4">
+                            Legal Documentation
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Accurate drafting and review of legal documents to avoid disputes
+                            and ensure full legal validity.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Agreements & contracts</li>
+                            <li>✔ Legal notices & affidavits</li>
+                            <li>✔ Power of attorney</li>
+                            <li>✔ Compliance documentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="card group bg-white rounded-xl border overflow-hidden
+                  transition-all duration-300 ease-out
+                  hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="overflow-hidden">
+                        <img src="images/pic5.avif" alt="Criminal Defense" class="h-64 w-full object-cover
+                      transition-transform duration-500
+                      group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#0F172A] mb-4">
+                            Criminal Defense
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Strong and strategic defense to protect your rights during
+                            investigations and court proceedings.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Bail & anticipatory bail</li>
+                            <li>✔ Trial representation</li>
+                            <li>✔ Appeals & revisions</li>
+                            <li>✔ Defense strategy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="card group bg-white rounded-xl border overflow-hidden
+                  transition-all duration-300 ease-out
+                  hover:-translate-y-3 hover:shadow-2xl">
+                    <div class="overflow-hidden">
+                        <img src="images/img8.avif" alt="Legal Consultation" class="h-64 w-full object-cover
+                      transition-transform duration-500
+                      group-hover:scale-110">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-[#0F172A] mb-4">
+                            Legal Consultation
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Personalized consultations to evaluate your case and provide
+                            clear legal direction.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✔ Case evaluation</li>
+                            <li>✔ Legal opinion</li>
+                            <li>✔ Risk assessment</li>
+                            <li>✔ Action plan guidance</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION2 -->
+    <section class="py-20 bg-[#F8FAFC]">
+        <div class="max-w-4xl mx-auto px-6">
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A]">
+                    Client Reviews
+                </h2>
+                <p class="mt-4 text-gray-600">
+                    Real experiences from clients who trusted our services
+                </p>
+            </div>
+
+            <!-- Slider Container -->
+            <div class="relative overflow-hidden">
+
+                <!-- Left Arrow -->
+                <button onclick="prevSlide()"
+                    class="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-[#0F172A] text-white w-10 h-10 rounded-full flex items-center justify-center shadow hover:scale-105 transition">
+                    &#10094;
+                </button>
+
+                <!-- Right Arrow -->
+                <button onclick="nextSlide()"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-[#0F172A] text-white w-10 h-10 rounded-full flex items-center justify-center shadow hover:scale-105 transition">
+                    &#10095;
+                </button>
+
+                <!-- Slider Track -->
+                <div id="sliderTrack" class="flex transition-transform duration-500 ease-in-out">
+
+                    <!-- Card 1 -->
+                    <div class="min-w-full px-4">
+                        <div class="card bg-white p-8 rounded-xl shadow-md border border-gray-200 text-center">
+                            <p class="text-gray-600 mb-6">
+                                “Exceptional legal guidance with clear communication throughout
+                                the case. I highly recommend their services.”
+                            </p>
+                            <h4 class="font-semibold text-[#0F172A]">Ramesh Kumar</h4>
+                            <span class="text-sm text-gray-500">Corporate Law</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="min-w-full px-4">
+                        <div class="card bg-white p-8 rounded-xl shadow-md border border-gray-200 text-center">
+                            <p class="text-gray-600 mb-6">
+                                “Professional, honest, and supportive. They handled my family
+                                matter with care and efficiency.”
+                            </p>
+                            <h4 class="font-semibold text-[#0F172A]">Priya Sharma</h4>
+                            <span class="text-sm text-gray-500">Family Law</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="min-w-full px-4">
+                        <div class="card bg-white p-8 rounded-xl shadow-md border border-gray-200 text-center">
+                            <p class="text-gray-600 mb-6">
+                                “Their expertise helped resolve my property dispute smoothly.
+                                Clear advice and strong representation.”
+                            </p>
+                            <h4 class="font-semibold text-[#0F172A]">Arjun Mehta</h4>
+                            <span class="text-sm text-gray-500">Property Law</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="min-w-full px-4">
+                        <div class="cardbg-white p-8 rounded-xl shadow-md border border-gray-200 text-center">
+                            <p class="text-gray-600 mb-6">
+                                “Timely updates and transparent process made everything stress-free.
+                                Truly professional legal service.”
+                            </p>
+                            <h4 class="font-semibold text-[#0F172A]">Sneha Iyer</h4>
+                            <span class="text-sm text-gray-500">Civil Litigation</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+                    },
+                },
+            },
+        }
+        let currentIndex = 0;
+        const track = document.getElementById("sliderTrack");
+        const totalSlides = track.children.length;
+
+        function updateSlide() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlide();
+        }
+    </script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>

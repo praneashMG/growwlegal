@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Groww Legal</title>
+  <link rel="icon" href="images/logo.jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* RTL */
+    .rtl {
+      direction: rtl;
+    }
+
+    [dir="rtl"] .title {
+      margin-right: 20px !important;
+    }
+
+    /* THEME TOGGLE */
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #111111;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    [data-theme="dark"] section,
+    [data-theme="dark"] .card {
+      background-color: #000000 !important;
+    }
+
+    [data-theme="dark"] .btn,
+    [data-theme="dark"] .btn1:hover {
+      color: #000000 !important;
+    }
+
+    [data-theme="dark"] .title {
+      color: white !important;
+    }
+
+
+    [data-theme="dark"] body,
+    [data-theme="dark"] p,
+    [data-theme="dark"] h1,
+    [data-theme="dark"] h2,
+    [data-theme="dark"] h3,
+    [data-theme="dark"] h4,
+    [data-theme="dark"] h5,
+    [data-theme="dark"] h6,
+    [data-theme="dark"] span,
+    [data-theme="dark"] li,
+    [data-theme="dark"] a,
+    [data-theme="dark"] label,
+    [data-theme="dark"] small,
+    [data-theme="dark"] strong {
+      color: #ffffff !important;
+    }
+
+    @media (max-width:821px) {
+      .image {
+        margin-top: 100px;
+      }
+    }
+    @media (max-width:394px) {
+      .image {
+        margin-top: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <!-- navbar -->
+  <div id="navbar"></div>
+  <!-- HERO BANNER -->
+  <section class="relative bg-gradient-to-br from-[#0F172A] to-[#1E293B] 
+min-h-screen flex flex-col lg:flex-row items-center overflow-hidden">
+
+    <!-- IMAGE FIRST (mobile + tablet) -->
+    <div class="w-full lg:w-1/2 flex justify-center px-6 md:px-10 lg:px-0 
+              pt-16 md:pt-20 lg:pt-0 
+              order-1 lg:order-2">
+
+      <div class="image bg-white rounded-3xl shadow-2xl overflow-hidden 
+                w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md">
+        <img src="images/bg4.avif" alt="Contact Illustration" class="w-full h-full object-cover">
+      </div>
+
+    </div>
+
+    <!-- TEXT SECOND (mobile + tablet) -->
+    <div class="w-full lg:w-1/2 px-6 md:px-10 lg:px-20 
+              py-16 md:py-20 lg:py-24 
+              text-center lg:text-left 
+              order-2 lg:order-1">
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-tight">
+        Connect with Groww Legal Experts
+      </h1>
+
+      <p class="text-gray-300 text-base sm:text-lg lg:text-xl mb-8 max-w-xl mx-auto lg:mx-0">
+        Have questions or need professional legal advice? Our team is here to guide you efficiently and clearly.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        <a href="contact.html"
+          class="btn bg-[#F8FAFC] text-[#0F172A] font-semibold px-6 py-3 rounded-lg shadow hover:shadow-lg transition">
+          Contact Now
+        </a>
+
+        <a href="contact.html"
+          class="btn1 border border-[#F8FAFC] text-[#F8FAFC] font-semibold px-6 py-3 rounded-lg hover:bg-[#F8FAFC] hover:text-[#0F172A] transition">
+          Email Us
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTION1 -->
+  <section class="py-16 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- SECTION HEADER -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A]">Contact Us</h2>
+        <p class="text-gray-600 mt-2 text-lg px-4">
+          Choose the best way to connect with our legal team.
+        </p>
+      </div>
+
+      <!-- CONTACT CARDS -->
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Card 1 -->
+          <div class="card bg-white rounded-xl shadow-md p-6 
+    flex flex-col items-center text-center 
+    border border-white 
+    transition-transform duration-300 
+    hover:-translate-y-3 hover:shadow-xl">
+
+            <div class="w-16 h-16 flex items-center justify-center 
+      bg-[#0F172A]/10 rounded-full mb-4">
+              <i class="title bi bi-geo-alt text-2xl text-[#0F172A]"></i>
+            </div>
+
+            <h3 class="font-semibold text-[#0F172A] mb-1">Office Location</h3>
+            <p class="text-gray-500 text-sm">Chennai, TN</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card bg-white rounded-xl shadow-md p-6 
+    flex flex-col items-center text-center 
+    border border-white 
+    transition-transform duration-300 
+    hover:-translate-y-3 hover:shadow-xl">
+
+            <div class="w-16 h-16 flex items-center justify-center 
+      bg-[#0F172A]/10 rounded-full mb-4">
+              <i class="title bi bi-telephone text-2xl text-[#0F172A]"></i>
+            </div>
+
+            <h3 class="font-semibold text-[#0F172A] mb-1">Call Us</h3>
+            <p class="text-gray-500 text-sm">+1 234 567 890</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card bg-white rounded-xl shadow-md p-6 
+    flex flex-col items-center text-center 
+    border border-white 
+    transition-transform duration-300 
+    hover:-translate-y-3 hover:shadow-xl">
+
+            <div class="w-16 h-16 flex items-center justify-center 
+      bg-[#0F172A]/10 rounded-full mb-4">
+              <i class="title bi bi-envelope text-2xl text-[#0F172A]"></i>
+            </div>
+
+            <h3 class="font-semibold text-[#0F172A] mb-1">Email</h3>
+            <p class="text-gray-500 text-sm">contact@legalfirm.com</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card bg-white rounded-xl shadow-md p-6 
+    flex flex-col items-center text-center 
+    border border-white 
+    transition-transform duration-300 
+    hover:-translate-y-3 hover:shadow-xl">
+
+            <div class="w-16 h-16 flex items-center justify-center 
+      bg-[#0F172A]/10 rounded-full mb-4">
+              <i class="title bi bi-chat-dots text-2xl text-[#0F172A]"></i>
+            </div>
+
+            <h3 class="font-semibold text-[#0F172A] mb-1">WhatsApp</h3>
+            <p class="text-gray-500 text-sm">Quick Support</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A]">Get Connected With Us</h2>
+        <p class="text-gray-600 mt-2 text-lg px-4">
+          Reach out to our legal experts using the form or visit our office.
+        </p>
+      </div>
+
+      <!-- Form + Map -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Contact Form -->
+        <div class="card bg-white p-8 rounded-xl shadow-md border border-white">
+          <h3 class="text-xl font-bold text-[#0F172A] mb-6">Send Message</h3>
+          <form action="#" method="POST" class="space-y-4">
+            <input type="text" placeholder="Your Name"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
+              required />
+            <input type="email" placeholder="Email Address"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
+              required />
+            <input type="text" placeholder="Subject"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
+              required />
+            <textarea placeholder="Your Message" rows="5"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0F172A]"
+              required></textarea>
+            <button type="submit"
+              class="w-full bg-[#0F172A] text-white font-semibold rounded-lg py-3 hover:bg-[#0d1325] transition"
+              required>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="w-full h-[500px] rounded-xl overflow-hidden shadow-md">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31157.74848888041!2d77.5645834652795!3d12.971598677056002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670e1b2f5b1%3A0x65d5f55a2ad9f4e6!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1676690483777!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- SECTION3 -->
+  <!-- CTA SECTION -->
+  <section class="bg-[#0F172A] py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center
+             bg-[#0F172A] border border-white/20 rounded-3xl p-10 lg:p-14">
+
+      <!-- Left Content -->
+      <div class="text-white text-center lg:text-left">
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          Let’s Protect Your <br class="hidden sm:block" /> Legal Rights
+        </h2>
+        <p class="text-gray-300 text-lg max-w-xl mb-8">
+          Whether you need legal advice, representation, or documentation,
+          our experienced team is here to support you with clarity and confidence.
+        </p>
+
+        <a href="contact.html"
+          class="btn inline-block px-10 py-4 bg-white text-[#0F172A]
+                 font-semibold rounded-xl text-lg
+                 hover:bg-[#F8FAFC] transition">
+          Get Expert Consultation
+        </a>
+      </div>
+
+      <!-- Right Highlight Box -->
+      <div
+        class="card bg-white rounded-2xl p-8 md:p-10 text-center
+               shadow-lg">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">
+          Speak Directly With Our Legal Team
+        </h3>
+        <p class="text-gray-600 mb-6">
+          Immediate assistance for urgent legal matters.
+          We are just one call away.
+        </p>
+
+        <a href="tel:+919876543210"
+          class="block w-full px-6 py-4
+                 bg-[#0F172A] text-white
+                 font-semibold rounded-xl text-lg
+                 hover:scale-[1.02] transition">
+          Call Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <div id="footer"></div>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+  </script>
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+</body>
+
+</html>

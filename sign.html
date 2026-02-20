@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Create Account - Groww Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --bg: #f3f4f6;
+            --card: #ffffff;
+            --text: #111;
+        }
+
+        [data-theme="dark"] {
+            --bg: #0F172A;
+            --card: #1E293B;
+            --text: #F8FAFC;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            transition: .3s;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .theme-card {
+            background: var(--card)
+        }
+
+        [data-theme="dark"] .title {
+            color: white !important;
+        }
+
+        [data-theme="dark"] .btn:hover {
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="h-16 theme-card shadow flex items-center bg-[#0F172A]">
+        <div class="max-w-6xl mx-auto w-full px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-[#CBD5E1]">
+                <a href="index.html">Groww Legal</a>
+            </h1>
+
+            <div class="flex gap-4 text-xl">
+                <button id="rtlToggle" class="text-white">⇄</button>
+                <button id="themeToggle" class="text-white"><i id="themeIcon" class="bi bi-moon-fill"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="flex-1 flex items-center justify-center px-4">
+
+        <!-- CARD -->
+        <div
+            class="w-full max-w-6xl theme-card rounded-2xl shadow-lg flex flex-col lg:flex-row overflow-hidden max-h-[calc(100vh-90px)]">
+
+            <!-- LEFT PANEL -->
+            <div
+                class="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-white px-12 py-10 flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-6">Your Legal Journey Starts Here ⚖️</h2>
+
+                <div class="space-y-4 text-sm">
+                    <div class="flex gap-3"><i class="bi bi-building text-xl"></i>Corporate & Business Law</div>
+                    <div class="flex gap-3"><i class="bi bi-house-door text-xl"></i>Real Estate & Property Law</div>
+                    <div class="flex gap-3"><i class="bi bi-people-fill text-xl"></i>Family & Personal Legal Services
+                    </div>
+                </div>
+
+                <div class="bg-white/20 p-4 rounded-lg text-center mt-10">
+                    <p class="font-semibold">“Justice, Integrity & Excellence”</p>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <div class="w-full lg:w-1/2 px-6 sm:px-10 lg:px-12 py-8 flex items-center">
+                <div class="w-full max-w-md mx-auto">
+
+                    <h3 class="title text-3xl font-bold mb-2 text-[#0F172A]">Create Account</h3>
+                    <p class="text-gray-500 mb-6">Join Groww Legal today</p>
+
+                    <form class="space-y-4">
+
+                        <div class="flex gap-4 flex-col sm:flex-row">
+                            <input type="text" placeholder="First Name" class="flex-1 p-3 border rounded-lg" required>
+                            <input type="text" placeholder="Last Name" class="flex-1 p-3 border rounded-lg" required>
+                        </div>
+
+                        <input type="email" placeholder="Email Address" class="w-full p-3 border rounded-lg" required>
+                        <input type="password" placeholder="Password" class="w-full p-3 border rounded-lg" required>
+
+                        <label class="flex gap-2 text-sm">
+                            <input type="checkbox"> I agree to Terms & Privacy Policy
+                        </label>
+
+                        <button
+                            class="title w-full bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white py-3 rounded-lg font-semibold">
+                            Create Account
+                        </button>
+
+                        <div class="flex items-center gap-3">
+                            <hr class="flex-1"><span class="text-gray-400 text-xs">or</span>
+                            <hr class="flex-1">
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button class="btn flex-1 py-2 border rounded-lg hover:bg-gray-100"><i
+                                    class="bi bi-google"></i></button>
+                            <button class="btn flex-1 py-2 border rounded-lg hover:bg-gray-100"><i
+                                    class="bi bi-facebook"></i></button>
+                            <button class="btn flex-1 py-2 border rounded-lg hover:bg-gray-100"><i
+                                    class="bi bi-apple"></i></button>
+                        </div>
+
+                        <p class="text-center text-sm mt-2">
+                            Already have an account?
+                            <a href="login.html" class="text-[#1E293B] font-semibold">Login</a>
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        rtlToggle.onclick = () => document.documentElement.dir =
+            document.documentElement.dir === "rtl" ? "ltr" : "rtl";
+
+        themeToggle.onclick = () => {
+            let html = document.documentElement;
+            let theme = html.dataset.theme === "dark" ? "light" : "dark";
+            html.dataset.theme = theme;
+            themeIcon.className = theme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-fill";
+        }
+    </script>
+
+</body>
+
+</html>

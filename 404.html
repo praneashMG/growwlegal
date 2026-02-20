@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.jpeg">
+  <title>404 - Page Not Found</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    /* Dark mode */
+    [data-theme="dark"] body {
+      background: #0F172A;
+      color: #fff;
+    }
+    [data-theme="dark"] * { color: #fff !important; }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: #F3F4F6;
+      position: relative;
+    }
+
+    /* Floating animation */
+    .float { animation: float 3s ease-in-out infinite; }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* Fade-in animation */
+    .fade-in { opacity: 0; animation: fadeIn 1s forwards; }
+    .fade-in-delay { opacity: 0; animation: fadeIn 1s forwards; animation-delay: 0.5s; }
+    .fade-in-delay2 { opacity: 0; animation: fadeIn 1s forwards; animation-delay: 1s; }
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    /* Law-themed floating icons */
+    .icon {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0.2;
+      animation: floatIcon linear infinite;
+    }
+    @keyframes floatIcon {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0.2; }
+      50% { opacity: 0.5; }
+      100% { transform: translateY(-20vh) rotate(360deg); opacity: 0.2; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Floating Law Icons -->
+  <i class="bi bi-gavel icon" style="left: 10%; animation-duration: 12s;"></i>
+  <i class="bi bi-balance-scale icon" style="left: 30%; animation-duration: 15s;"></i>
+  <i class="bi bi-building icon" style="left: 50%; animation-duration: 18s;"></i>
+  <i class="bi bi-gavel icon" style="left: 70%; animation-duration: 20s;"></i>
+  <i class="bi bi-balance-scale icon" style="left: 85%; animation-duration: 16s;"></i>
+
+  <!-- Center Content -->
+  <div class="text-center p-6 max-w-md z-10">
+    <h1 class="text-9xl font-bold text-red-600 mb-6 float">404</h1>
+    <h2 class="text-3xl font-bold mb-4 fade-in">Oops! Page Not Found</h2>
+    <p class="mb-6 fade-in-delay">Looks like the case you are trying to access does not exist.</p>
+    <a href="index.html"
+      class="inline-block bg-[#0F172A] text-white px-6 py-3 rounded-lg shadow hover:bg-[#1E293B] transition fade-in-delay2">Go Back Home</a>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Login - Groww Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --home-bg: #ffffff;
+            --text-color: #111;
+        }
+
+        [data-theme="dark"] {
+            --home-bg: #0F172A;
+            --text-color: #F8FAFC;
+        }
+
+        body {
+            background: var(--home-bg) !important;
+            color: var(--text-color);
+            transition: .4s;
+        }
+
+        [data-theme="dark"] nav,
+        [data-theme="dark"] .card,
+        [data-theme="dark"] .card1 {
+            background: #1E293B !important
+        }
+
+        [data-theme="dark"] .title {
+            color: white !important;
+        }
+
+        [data-theme="dark"] .btn:hover {
+            color: black !important;
+        }
+
+        @media(max-width:821px) {
+            .card1 {
+                display: none !important
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <!-- NAVBAR -->
+    <nav class="w-full bg-[#0F172A] shadow-md">
+        <div class="max-w-4xl mx-auto px-6 flex items-center justify-between h-16">
+
+            <h1 class="text-2xl font-bold text-[#CBD5E1]">
+                <a href="index.html">Groww Legal</a>
+            </h1>
+
+            <div class="flex gap-4 text-xl">
+                <button id="rtlToggle" class="text-white">⇄</button>
+                <button id="theme-toggle" class="text-white"><i class="bi bi-moon-fill"></i></button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="flex justify-center items-center min-h-screen px-4 pt-8 mt-[-60px]">
+        <div class="flex flex-col lg:flex-row bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-4xl">
+
+            <!-- LEFT MARKETING -->
+            <div
+                class="card1 lg:w-1/2 flex flex-col justify-between p-10 bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-white">
+
+                <div>
+                    <h1 class="text-3xl font-bold mb-3">Protect Your Rights</h1>
+                    <p class="mb-6">
+                        Expert legal solutions for individuals and businesses. Our attorneys are dedicated to achieving
+                        the best results.
+                    </p>
+
+                    <ul class="space-y-3">
+                        <li>✔ Corporate & Business Law</li>
+                        <li>✔ Civil & Criminal Litigation</li>
+                        <li>✔ Real Estate & Family Law</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/20 p-4 rounded-lg text-center mt-10">
+                    <p class="font-semibold">“Justice, Integrity & Excellence”</p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT LOGIN -->
+            <div class="card lg:w-1/2 p-10 flex flex-col justify-center bg-white">
+                <div class="max-w-md mx-auto w-full">
+
+                    <h2 class="title text-2xl font-bold mb-2 text-center text-[#0F172A]">Welcome Back</h2>
+                    <p class="text-gray-600 mb-6 text-center">Login to access your account</p>
+
+                    <form class="space-y-4">
+
+                        <div>
+                            <label>Email Address</label>
+                            <input type="email" placeholder="your@email.com"
+                                class="w-full p-3 rounded-lg  focus:ring-2 focus:ring-[#0F172A]" required>
+                        </div>
+
+                        <div>
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter password"
+                                class="w-full p-3 rounded-lg focus:ring-2 focus:ring-[#0F172A]" required>
+                        </div>
+
+                        <div class="flex justify-between text-sm">
+                            <label class="flex items-center gap-2">
+                                <input type="checkbox"> Remember me
+                            </label>
+                            <a href="#" class="text-[#0F172A]">Forgot Password?</a>
+                        </div>
+
+                        <button
+                            class="w-full bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white py-3 rounded-lg font-bold mt-4">
+                            Sign In
+                        </button>
+
+                    </form>
+
+                    <div class="my-4 flex items-center">
+                        <hr class="flex-grow">
+                        <span class="px-2 text-gray-400 text-sm">Or continue with</span>
+                        <hr class="flex-grow">
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button class="btn flex-1 py-2 border rounded-lg hover:bg-gray-100"><i
+                                class="bi bi-google"></i></button>
+                        <button class="btn flex-1 py-2 border rounded-lg hover:bg-gray-100"><i
+                                class="bi bi-facebook"></i></button>
+                        <button class="btn flex-1 py-2 border rounded-lg hover:bg-gray-100"><i
+                                class="bi bi-apple"></i></button>
+                    </div>
+
+                    <p class="mt-6 text-center text-sm">
+                        New here? <a href="sign.html" class="text-[#1E293B] font-semibold">Create account</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // RTL
+        rtlToggle.onclick = () => document.documentElement.dir =
+            document.documentElement.dir === "rtl" ? "ltr" : "rtl";
+
+        // THEME SAVE
+        const btn = document.getElementById("theme-toggle");
+        const saved = localStorage.getItem("theme");
+        if (saved) {
+            document.documentElement.dataset.theme = saved;
+            btn.innerHTML = saved === "dark" ? '<i class="bi bi-sun-fill"></i>' : '<i class="bi bi-moon-fill"></i>';
+        }
+        btn.onclick = () => {
+            let theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            document.documentElement.dataset.theme = theme;
+            localStorage.setItem("theme", theme);
+            btn.innerHTML = theme === "dark" ? '<i class="bi bi-sun-fill"></i>' : '<i class="bi bi-moon-fill"></i>';
+        }
+    </script>
+
+</body>
+
+</html>

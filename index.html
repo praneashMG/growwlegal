@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home1 - Groww Legal</title>
+  <link rel="icon" href="images/logo.jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* RTL */
+    .rtl {
+      direction: rtl;
+    }
+    [dir="rtl"] .title {
+  margin-right: 20px !important;
+}
+
+    /* THEME TOGGLE */
+    :root {
+      --home-bg: #ffffff;
+      --text-color: #111111;
+    }
+
+    [data-theme="dark"] {
+      --home-bg: #000000;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--home-bg) !important;
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    [data-theme="dark"] section,
+    [data-theme="dark"] .card {
+      background-color: #000000 !important;
+    }
+ [data-theme="dark"] .btn,
+    [data-theme="dark"] .btn1:hover {
+      color: #000000 !important;
+    }
+    [data-theme="dark"] body,
+    [data-theme="dark"] p,
+    [data-theme="dark"] h1,
+    [data-theme="dark"] h2,
+    [data-theme="dark"] h3,
+    [data-theme="dark"] h4,
+    [data-theme="dark"] h5,
+    [data-theme="dark"] h6,
+    [data-theme="dark"] span,
+    [data-theme="dark"] li,
+    [data-theme="dark"] a,
+    [data-theme="dark"] label,
+    [data-theme="dark"] small,
+    [data-theme="dark"] strong {
+      color: #ffffff !important;
+    }
+    @media (max-width:821px){
+      .head{
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <!-- navbar -->
+  <div id="navbar"></div>
+  <!-- HERO BANNER -->
+  <section class="relative bg-gradient-to-br from-[#0F172A] via-[#0F172A] to-[#1E293B] min-h-screen flex items-center">
+
+  <!-- Main content container -->
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20 relative z-10">
+    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+
+      <!-- Left content -->
+      <div class="flex-1 text-center lg:text-left">
+        <!-- Silver badge -->
+        <div class="head inline-block mb-4 md:mb-6">
+          <span
+            class="btn bg-[#CBD5E1] text-[#0F172A] px-4 py-1.5 text-sm font-semibold tracking-wider uppercase rounded-sm">Since
+            1995</span>
+        </div>
+
+        <!-- Main heading -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
+          <span class="block">Expert Legal</span>
+          <span class="text-[#CBD5E1]">Consultancy</span>
+          <span class="block">For Your Success</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="text-gray-300 text-base sm:text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0">
+          Strategic legal solutions tailored to protect your interests and drive your business forward. Trust our
+          experienced team of legal professionals.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="contact.html"
+            class="btn bg-[#CBD5E1] hover:bg-[#B0C0D0] text-[#0F172A] font-semibold px-6 md:px-8 py-3 md:py-4 rounded-md transition duration-300 text-center shadow-lg shadow-[#CBD5E1]/20">
+            Schedule Consultation
+          </a>
+          <a href="service.html"
+            class="btn1 border-2 border-[#CBD5E1] text-white hover:bg-[#CBD5E1] hover:text-[#0F172A] font-semibold px-6 md:px-8 py-3 md:py-4 rounded-md transition duration-300 text-center">
+            Our Services
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-4 mt-8 md:mt-12 max-w-md mx-auto lg:mx-0">
+          <div class="text-center lg:text-left">
+            <div class="text-2xl md:text-3xl font-bold text-[#CBD5E1]">500+</div>
+            <div class="text-gray-400 text-sm">Cases Won</div>
+          </div>
+          <div class="text-center lg:text-left">
+            <div class="text-2xl md:text-3xl font-bold text-[#CBD5E1]">50+</div>
+            <div class="text-gray-400 text-sm">Expert Lawyers</div>
+          </div>
+          <div class="text-center lg:text-left">
+            <div class="text-2xl md:text-3xl font-bold text-[#CBD5E1]">98%</div>
+            <div class="text-gray-400 text-sm">Success Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right content - Image -->
+      <div class="flex-1 w-full max-w-md lg:max-w-none mx-auto">
+
+        <!-- Main image card with silver frame -->
+        <div class="bg-gradient-to-br from-[#CBD5E1] to-[#9AA8B9] p-1 rounded-lg shadow-2xl">
+          <div class="bg-[#0F172A] p-2 rounded-lg">
+            <img
+              src="images/img1.avif"
+              alt="Legal professional in courtroom" class="w-full h-[320px] aspect-[3/4] sm:h-[420px] sm:aspect-[4/5] md:h-[520px]
+              lg:h-[530px] rounded-lg object-cover aspect-[4/5]"
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION1 -->
+ <section class="bg-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left Side - Image -->
+      <div class="relative">
+        <img src="images/img3.webp"
+             alt="Courtroom"
+             class="rounded-2xl shadow-xl w-full object-cover 
+                    hover:scale-105 transition-transform duration-500">
+      </div>
+
+
+      <!-- Right Side - Content -->
+      <div>
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F172A] mb-6">
+          Why Choose <span class="text-[#0F172A]">Groww Legal?</span>
+        </h2>
+
+        <!-- Description -->
+        <p class="text-gray-600 mb-8 text-base sm:text-lg">
+          We are committed to delivering reliable legal services with integrity, 
+          professionalism, and client-focused solutions.
+        </p>
+
+        <!-- Points -->
+        <div class="space-y-5">
+
+          <!-- Point -->
+          <div class="flex items-center space-x-4 group">
+            <div class="w-10 h-10 flex items-center justify-center 
+                        rounded-full bg-[#CBD5E1] 
+                        group-hover:bg-[#0F172A] 
+                        transition duration-300">
+              <svg class="w-5 h-5 text-[#0F172A] group-hover:text-white" 
+                   fill="none" stroke="currentColor" stroke-width="3"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" 
+                      d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span class="title text-[#0F172A] text-lg font-medium">
+              Experienced Attorneys
+            </span>
+          </div>
+
+          <!-- Point -->
+          <div class="flex items-center space-x-4 group">
+            <div class="w-10 h-10 flex items-center justify-center 
+                        rounded-full bg-[#CBD5E1] 
+                        group-hover:bg-[#0F172A] 
+                        transition duration-300">
+              <svg class="w-5 h-5 text-[#0F172A] group-hover:text-white" 
+                   fill="none" stroke="currentColor" stroke-width="3"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" 
+                      d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span class="title text-[#0F172A] text-lg font-medium">
+              Confidential Support
+            </span>
+          </div>
+
+          <!-- Point -->
+          <div class="flex items-center space-x-4 group">
+            <div class="w-10 h-10 flex items-center justify-center 
+                        rounded-full bg-[#CBD5E1] 
+                        group-hover:bg-[#0F172A] 
+                        transition duration-300">
+              <svg class="w-5 h-5 text-[#0F172A] group-hover:text-white" 
+                   fill="none" stroke="currentColor" stroke-width="3"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" 
+                      d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span class="title text-[#0F172A] text-lg font-medium">
+              Transparent Fees
+            </span>
+          </div>
+
+          <!-- Point -->
+          <div class="flex items-center space-x-4 group">
+            <div class="w-10 h-10 flex items-center justify-center 
+                        rounded-full bg-[#CBD5E1] 
+                        group-hover:bg-[#0F172A] 
+                        transition duration-300">
+              <svg class="w-5 h-5 text-[#0F172A] group-hover:text-white" 
+                   fill="none" stroke="currentColor" stroke-width="3"
+                   viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" 
+                      d="M5 13l4 4L19 7"/>
+              </svg>
+            </div>
+            <span class="title text-[#0F172A] text-lg font-medium">
+              Proven Track Record
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SECTION2 -->
+<section class="bg-white py-16 md:py-24">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <span class=" font-semibold text-sm tracking-wider uppercase">Practice Areas</span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F172A] mt-4 mb-6">Comprehensive Legal Solutions</h2>
+      <p class="text-gray-900 text-base sm:text-lg">We provide expert legal counsel across a wide range of practice areas, ensuring your interests are protected at every step.</p>
+    </div>
+
+    <!-- Practice Areas Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      
+      <!-- Corporate Law -->
+      <div class="group bg-[#1E293B] rounded-lg p-6 md:p-8 hover:bg-gradient-to-br hover:from-[#1E293B] hover:to-[#2D3A4F] transition-all duration-300 border border-transparent hover:border-[#CBD5E1]/30">
+        <div class="w-14 h-14 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#CBD5E1] transition-colors duration-300">
+          <svg class="w-7 h-7 text-[#CBD5E1] group-hover:text-[#0F172A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Corporate Law</h3>
+        <p class="text-gray-400 text-sm md:text-base mb-4">Business formation, mergers & acquisitions, corporate governance, and compliance.</p>
+        <a href="#" class="inline-flex items-center text-[#CBD5E1] hover:text-white transition-colors duration-300">
+          <span class="text-sm font-semibold">Learn More</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Litigation -->
+      <div class="group bg-[#1E293B] rounded-lg p-6 md:p-8 hover:bg-gradient-to-br hover:from-[#1E293B] hover:to-[#2D3A4F] transition-all duration-300 border border-transparent hover:border-[#CBD5E1]/30">
+        <div class="w-14 h-14 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#CBD5E1] transition-colors duration-300">
+          <svg class="w-7 h-7 text-[#CBD5E1] group-hover:text-[#0F172A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+          </svg>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Litigation</h3>
+        <p class="text-gray-400 text-sm md:text-base mb-4">Civil litigation, commercial disputes, defense, and appellate advocacy.</p>
+        <a href="#" class="inline-flex items-center text-[#CBD5E1] hover:text-white transition-colors duration-300">
+          <span class="text-sm font-semibold">Learn More</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Real Estate -->
+      <div class="group bg-[#1E293B] rounded-lg p-6 md:p-8 hover:bg-gradient-to-br hover:from-[#1E293B] hover:to-[#2D3A4F] transition-all duration-300 border border-transparent hover:border-[#CBD5E1]/30">
+        <div class="w-14 h-14 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#CBD5E1] transition-colors duration-300">
+          <svg class="w-7 h-7 text-[#CBD5E1] group-hover:text-[#0F172A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Real Estate</h3>
+        <p class="text-gray-400 text-sm md:text-base mb-4">Property transactions, leasing, land use, zoning, and development agreements.</p>
+        <a href="#" class="inline-flex items-center text-[#CBD5E1] hover:text-white transition-colors duration-300">
+          <span class="text-sm font-semibold">Learn More</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Family Law -->
+      <div class="group bg-[#1E293B] rounded-lg p-6 md:p-8 hover:bg-gradient-to-br hover:from-[#1E293B] hover:to-[#2D3A4F] transition-all duration-300 border border-transparent hover:border-[#CBD5E1]/30">
+        <div class="w-14 h-14 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#CBD5E1] transition-colors duration-300">
+          <svg class="w-7 h-7 text-[#CBD5E1] group-hover:text-[#0F172A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Family Law</h3>
+        <p class="text-gray-400 text-sm md:text-base mb-4">Divorce, child custody, adoption, mediation, and family dispute resolution.</p>
+        <a href="#" class="inline-flex items-center text-[#CBD5E1] hover:text-white transition-colors duration-300">
+          <span class="text-sm font-semibold">Learn More</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Intellectual Property -->
+      <div class="group bg-[#1E293B] rounded-lg p-6 md:p-8 hover:bg-gradient-to-br hover:from-[#1E293B] hover:to-[#2D3A4F] transition-all duration-300 border border-transparent hover:border-[#CBD5E1]/30">
+        <div class="w-14 h-14 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#CBD5E1] transition-colors duration-300">
+          <svg class="w-7 h-7 text-[#CBD5E1] group-hover:text-[#0F172A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Intellectual Property</h3>
+        <p class="text-gray-400 text-sm md:text-base mb-4">Trademarks, copyrights, patents, licensing, and IP protection strategies.</p>
+        <a href="#" class="inline-flex items-center text-[#CBD5E1] hover:text-white transition-colors duration-300">
+          <span class="text-sm font-semibold">Learn More</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Employment Law -->
+      <div class="group bg-[#1E293B] rounded-lg p-6 md:p-8 hover:bg-gradient-to-br hover:from-[#1E293B] hover:to-[#2D3A4F] transition-all duration-300 border border-transparent hover:border-[#CBD5E1]/30">
+        <div class="w-14 h-14 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#CBD5E1] transition-colors duration-300">
+          <svg class="w-7 h-7 text-[#CBD5E1] group-hover:text-[#0F172A] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Employment Law</h3>
+        <p class="text-gray-400 text-sm md:text-base mb-4">Workplace disputes, contracts, discrimination, and labor law compliance.</p>
+        <a href="#" class="inline-flex items-center text-[#CBD5E1] hover:text-white transition-colors duration-300">
+          <span class="text-sm font-semibold">Learn More</span>
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- View All Link -->
+    <div class="text-center mt-12 md:mt-16">
+      <a href="service.html" class="btn1 inline-flex items-center justify-center border-2 border-[#0F172A] text-black hover:bg-[#CBD5E1] hover:text-[#0F172A] font-semibold px-8 py-4 rounded-md transition duration-300">
+        View All Practice Areas
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION3 -->
+<section class="bg-[#1E293B] py-16 md:py-24">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Firm Philosophy Section -->
+    <div class="flex flex-col lg:flex-row gap-12 items-center">
+      
+      <!-- Left Content - Philosophy Text -->
+      <div class="flex-1">
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Our Philosophy</h3>
+        
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-10 h-10 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-[#CBD5E1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-white font-semibold text-lg mb-2">Integrity First</h4>
+              <p class="text-gray-400">We believe in honest, transparent counsel. Our clients trust us because we always put their interests above all else.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-10 h-10 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-[#CBD5E1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-white font-semibold text-lg mb-2">Strategic Innovation</h4>
+              <p class="text-gray-400">We combine traditional legal expertise with modern approaches to deliver innovative solutions for complex challenges.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-shrink-0">
+              <div class="w-10 h-10 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-[#CBD5E1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-white font-semibold text-lg mb-2">Client-Centered</h4>
+              <p class="text-gray-400">Every case receives personalized attention. We take time to understand your unique situation and goals.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founders Quote -->
+        <div class="mt-8 p-6 bg-[#0F172A] rounded-lg border-l-4 border-[#CBD5E1]">
+          <p class="text-gray-300 italic text-base md:text-lg">"Justice isn't just about winning cases—it's about making a lasting difference in our clients' lives. That principle has guided us for 25 years."</p>
+          <div class="mt-4 flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#CBD5E1]">
+              <img 
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" 
+                alt="Founder" 
+                class="w-full h-full object-cover"
+              >
+            </div>
+            <div>
+              <div class="font-bold text-white">John Mitchell</div>
+              <div class="text-[#CBD5E1] text-sm">Founder & Senior Partner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content - Image with Milestones -->
+      <div class="flex-1 w-full">
+        <div class="relative">
+          <!-- Main Image -->
+          <div class="bg-gradient-to-br from-[#CBD5E1] to-[#9AA8B9] p-1 rounded-lg shadow-2xl">
+            <div class="bg-[#0F172A] p-2 rounded-lg">
+              <img 
+                src="images/img2.avif" 
+                alt="Law firm team meeting" 
+                class="w-full h-auto rounded-lg object-cover aspect-[4/3]"
+                loading="lazy"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center mt-20 md:mt-24">
+      <a href="about.html" class="btn inline-flex items-center justify-center bg-[#CBD5E1] hover:bg-white text-[#0F172A] font-semibold px-8 py-4 rounded-md transition duration-300 shadow-lg shadow-[#CBD5E1]/20">
+        Learn More About Our History
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- SECTION4 -->
+ <!-- Featured Attorneys Component -->
+<section class="bg-white py-16 md:py-24">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <span class="text-black font-semibold text-sm tracking-wider uppercase">Our Team</span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F172A] mt-4 mb-6">Meet Our Expert Attorneys</h2>
+      <p class="text-gray-600 text-base sm:text-lg">Behind every successful case is a dedicated attorney. Get to know the legal minds who will fight for your rights.</p>
+    </div>
+
+    <!-- Attorneys Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      
+      <!-- Attorney 1 - Senior Partner -->
+      <div class="group relative">
+        <div class="relative overflow-hidden rounded-lg bg-[#0F172A]">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img 
+              src="images/team1.avif" 
+              alt="John Mitchell" 
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+          </div>
+          
+          <!-- Info Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <div class="text-[#CBD5E1] font-semibold text-sm mb-1">Senior Partner</div>
+              <div class="text-white font-bold text-xl mb-2">John Mitchell</div>
+              <div class="text-gray-300 text-sm mb-4">Corporate Law, M&A</div>
+              <div class="flex gap-2">
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                  </svg>
+                </a>
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.204 0 22.225 0z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Name below image (visible on mobile) -->
+        <div class="mt-4 text-center lg:hidden">
+          <div class="text-white font-bold text-lg">John Mitchell</div>
+          <div class="text-[#CBD5E1] text-sm">Senior Partner</div>
+        </div>
+      </div>
+
+      <!-- Attorney 2 - Partner -->
+      <div class="group relative">
+        <div class="relative overflow-hidden rounded-lg bg-[#0F172A]">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img 
+              src="images/team2.avif" 
+              alt="Sarah Chen" 
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+          </div>
+          
+          <!-- Info Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <div class="text-[#CBD5E1] font-semibold text-sm mb-1">Partner</div>
+              <div class="text-white font-bold text-xl mb-2">Sarah Chen</div>
+              <div class="text-gray-300 text-sm mb-4">Litigation, Dispute Resolution</div>
+              <div class="flex gap-2">
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                  </svg>
+                </a>
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.204 0 22.225 0z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-center lg:hidden">
+          <div class="text-white font-bold text-lg">Sarah Chen</div>
+          <div class="text-[#CBD5E1] text-sm">Partner</div>
+        </div>
+      </div>
+
+      <!-- Attorney 3 - Senior Associate -->
+      <div class="group relative">
+        <div class="relative overflow-hidden rounded-lg bg-[#0F172A]">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img 
+              src="images/team3.avif" 
+              alt="Michael Roberts" 
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+          </div>
+          
+          <!-- Info Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <div class="text-[#CBD5E1] font-semibold text-sm mb-1">Senior Associate</div>
+              <div class="text-white font-bold text-xl mb-2">Michael Roberts</div>
+              <div class="text-gray-300 text-sm mb-4">Real Estate, Property Law</div>
+              <div class="flex gap-2">
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                  </svg>
+                </a>
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.204 0 22.225 0z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-center lg:hidden">
+          <div class="text-white font-bold text-lg">Michael Roberts</div>
+          <div class="text-[#CBD5E1] text-sm">Senior Associate</div>
+        </div>
+      </div>
+
+      <!-- Attorney 4 - Associate -->
+      <div class="group relative">
+        <div class="relative overflow-hidden rounded-lg bg-[#0F172A]">
+          <div class="aspect-[3/4] overflow-hidden">
+            <img 
+              src="images/team4.avif" 
+              alt="Emily Rodriguez" 
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            >
+          </div>
+          
+          <!-- Info Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <div class="text-[#CBD5E1] font-semibold text-sm mb-1">Associate</div>
+              <div class="text-white font-bold text-xl mb-2">Emily Rodriguez</div>
+              <div class="text-gray-300 text-sm mb-4">Family Law, Mediation</div>
+              <div class="flex gap-2">
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                  </svg>
+                </a>
+                <a href="#" class="w-8 h-8 bg-[#CBD5E1]/20 rounded-full flex items-center justify-center hover:bg-[#CBD5E1] transition-colors duration-300">
+                  <svg class="w-4 h-4 text-[#CBD5E1] hover:text-[#0F172A]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.771-.773 1.771-1.729V1.729C24 .774 23.204 0 22.225 0z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-center lg:hidden">
+          <div class="text-white font-bold text-lg">Emily Rodriguez</div>
+          <div class="text-[#CBD5E1] text-sm">Associate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION5 -->
+<section class="bg-[#0F172A] py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#CBD5E1] mb-4">
+        What Our Clients Say
+      </h2>
+      <p class="text-gray-400 text-base sm:text-lg">
+        Trusted by individuals and businesses for reliable legal solutions.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
+
+      <!-- Testimonial Card -->
+      <div class="group relative w-80 h-80 rounded-full 
+                  bg-gradient-to-br from-[#1E293B] to-[#0F172A]
+                  flex flex-col items-center justify-center 
+                  text-center p-8
+                  transition-all duration-500
+                  hover:-translate-y-4 hover:shadow-2xl
+                  border border-[#CBD5E1]/20 hover:border-[#CBD5E1]/50">
+
+        <!-- Client Image -->
+        <img src="images/client1.jpg"
+             class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-[#CBD5E1]"
+             alt="Client">
+
+        <!-- Review -->
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          "Groww Legal handled my case with professionalism and dedication. 
+          Their expertise and clear communication made the process smooth and stress-free."
+        </p>
+
+        <!-- Name -->
+        <h4 class="text-[#CBD5E1] font-semibold text-base">
+          Priya Sharma
+        </h4>
+
+        <!-- Role -->
+        <span class="text-gray-400 text-sm">
+          Business Owner
+        </span>
+      </div>
+
+
+      <!-- Testimonial Card 2 -->
+      <div class="group relative w-80 h-80 rounded-full 
+                  bg-gradient-to-br from-[#1E293B] to-[#0F172A]
+                  flex flex-col items-center justify-center 
+                  text-center p-8
+                  transition-all duration-500
+                  hover:-translate-y-4 hover:shadow-2xl
+                  border border-[#CBD5E1]/20 hover:border-[#CBD5E1]/50">
+
+        <img src="images/client2.jpg"
+             class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-[#CBD5E1]"
+             alt="Client">
+
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          "Highly knowledgeable team. They provided strong representation 
+          and ensured my rights were protected at every stage."
+        </p>
+
+        <h4 class="text-[#CBD5E1] font-semibold text-base">
+          Arjun Patel
+        </h4>
+
+        <span class="text-gray-400 text-sm">
+          Entrepreneur
+        </span>
+      </div>
+
+
+      <!-- Testimonial Card 3 -->
+      <div class="group relative w-80 h-80 rounded-full 
+                  bg-gradient-to-br from-[#1E293B] to-[#0F172A]
+                  flex flex-col items-center justify-center 
+                  text-center p-8
+                  transition-all duration-500
+                  hover:-translate-y-4 hover:shadow-2xl
+                  border border-[#CBD5E1]/20 hover:border-[#CBD5E1]/50 md:col-span-2 lg:col-span-1">
+
+        <img src="images/client3.jpg"
+             class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-[#CBD5E1]"
+             alt="Client">
+
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+          "Excellent legal advice and quick response time. 
+          I would highly recommend Groww Legal for any legal matters."
+        </p>
+
+        <h4 class="text-[#CBD5E1] font-semibold text-base">
+          Meera Iyer
+        </h4>
+
+        <span class="text-gray-400 text-sm">
+          Consultant
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION6 -->
+ <section class="bg-white py-16 md:py-24 relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- CTA Card -->
+    <div class="relative bg-gradient-to-r from-[#1E293B] to-[#0F172A] 
+                rounded-2xl p-10 md:p-16 
+                text-center border border-[#CBD5E1]/20
+                shadow-xl">
+
+      <!-- Heading -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#CBD5E1] mb-6">
+        Need Legal Assistance?
+      </h2>
+
+      <!-- Description -->
+      <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8">
+        Our experienced legal professionals are ready to guide you through every step. 
+        Schedule a confidential consultation today.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+
+        <!-- Primary Button -->
+        <a href="contact.html"
+           class="btn px-8 py-3 bg-[#CBD5E1] text-[#0F172A] 
+                  font-semibold rounded-lg
+                  transition-all duration-300
+                  hover:bg-white hover:scale-105 hover:shadow-lg">
+          Book Consultation
+        </a>
+
+        <!-- Secondary Button -->
+        <a href="contact.html"
+           class="btn1 px-8 py-3 border border-[#CBD5E1] text-[#CBD5E1]
+                  font-semibold rounded-lg
+                  transition-all duration-300
+                  hover:bg-[#CBD5E1] hover:text-[#0F172A] hover:scale-105">
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <div id="footer"></div>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+          },
+        },
+      },
+    }
+  </script>
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+</body>
+
+</html>

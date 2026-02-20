@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog details - Groww Legal</title>
+    <link rel="icon" href="images/logo.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* RTL */
+        .rtl {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .title {
+            margin-right: 20px !important;
+        }
+
+        /* THEME TOGGLE */
+        :root {
+            --home-bg: #ffffff;
+            --text-color: #111111;
+        }
+
+        [data-theme="dark"] {
+            --home-bg: #000000;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--home-bg) !important;
+            color: var(--text-color);
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        [data-theme="dark"] section,
+        [data-theme="dark"] .card {
+            background-color: #000000 !important;
+        }
+
+        [data-theme="dark"] .btn,
+        [data-theme="dark"] .btn1:hover {
+            color: #000000 !important;
+        }
+
+        [data-theme="dark"] body,
+        [data-theme="dark"] p,
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] span,
+        [data-theme="dark"] li,
+        [data-theme="dark"] a,
+        [data-theme="dark"] label,
+        [data-theme="dark"] small,
+        [data-theme="dark"] strong {
+            color: #ffffff !important;
+        }
+
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- navbar -->
+    <div id="navbar"></div>
+    <!-- HERO BANNER -->
+    <!-- Premium Blog Details Hero -->
+    <section class="relative bg-[#0F172A] text-[#F8FAFC] overflow-hidden">
+
+        <!-- Decorative Gradient Shape -->
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-[#F8FAFC]/5 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-[#F8FAFC]/5 rounded-full blur-3xl"></div>
+
+        <div class="max-w-6xl mx-auto px-6 py-28 relative z-10">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Left Content -->
+                <div>
+                    <span class="uppercase tracking-widest text-sm text-[#F8FAFC]/60">
+                        Legal Knowledge Hub
+                    </span>
+
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mt-4 mb-6">
+                        In-Depth Legal Articles & Expert Insights
+                    </h1>
+
+                    <p class="text-lg text-[#F8FAFC]/80 mb-8">
+                        Stay informed with comprehensive legal resources covering
+                        civil, corporate, property, and criminal law topics designed
+                        to guide you with clarity and confidence.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href="blog.html"
+                            class="btn px-6 py-3 bg-[#F8FAFC] text-[#0F172A] font-semibold rounded-md hover:scale-105 transition">
+                            Read Article
+                        </a>
+
+                        <a href="contact.html"
+                            class="px-6 py-3 border border-[#F8FAFC]/40 rounded-md hover:bg-[#F8FAFC]/10 transition">
+                            Book Consultation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Decorative Card -->
+                <div class="relative">
+                    <div class="bg-[#F8FAFC]/10 backdrop-blur-md p-8 rounded-xl border border-[#F8FAFC]/20 shadow-2xl">
+                        <h3 class="text-xl font-semibold mb-4">
+                            Trusted Legal Guidance
+                        </h3>
+                        <p class="text-[#F8FAFC]/80">
+                            Our blog delivers expert analysis and professional advice to
+                            help individuals and businesses understand their legal rights
+                            and responsibilities.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- SECTION1 -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+
+  <h2 class="text-4xl font-bold text-center text-[#0F172A] mb-16">
+    Legal Knowledge & Insights
+  </h2>
+
+  <div class="flex flex-col gap-16">
+
+    <!-- 1 Contract Law -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img2.avif"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Contract Law in India</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Governed by the Indian Contract Act, 1872 regulating legally binding agreements.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Understanding contract law helps avoid disputes and ensures enforceability.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Offer & Acceptance</li>
+          <li>Lawful Consideration</li>
+          <li>Free Consent</li>
+          <li>Competent Parties</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2 Supreme Court -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row-reverse
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img6.avif"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Supreme Court Decisions</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Landmark rulings establish binding legal precedents.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          These judgments shape constitutional interpretation and governance.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Constitutional Rights</li>
+          <li>Corporate Impact</li>
+          <li>Public Interest</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3 Legal Documents -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img7.avif"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Preparing Legal Documents</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Accurate drafting ensures legal clarity and protection.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Well-prepared documents reduce risk and future disputes.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Contracts</li>
+          <li>Affidavits</li>
+          <li>Partnership Deeds</li>
+          <li>Lease Agreements</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4 Corporate Law -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row-reverse
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/bg4.avif"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Corporate Law Basics</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Governs company formation and legal compliance.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Ensures transparency, accountability, and ethical operations.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Company Registration</li>
+          <li>Director Duties</li>
+          <li>Annual Filings</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5 Taxation -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img1.avif"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Taxation Laws</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Important tax regulations for individuals and businesses.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Helps minimize liabilities and ensure compliance.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Income Tax</li>
+          <li>GST Compliance</li>
+          <li>Corporate Tax</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6 Intellectual Property -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row-reverse
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img10.webp"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Intellectual Property</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Protect creative and innovative works.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Safeguards branding, technology, and originality.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Trademarks</li>
+          <li>Patents</li>
+          <li>Copyrights</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 7 Real Estate -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img11.webp"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Real Estate Law</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Legal compliance in property dealings.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Ensures safe ownership and transparent transactions.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Property Registration</li>
+          <li>Sale Deed</li>
+          <li>RERA Compliance</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 8 Employment -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row-reverse
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img12.webp"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Employment Law</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Governs employer–employee relationships.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Protects workers’ rights and workplace safety.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Contracts</li>
+          <li>Minimum Wage</li>
+          <li>Workplace Safety</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 9 Starting Business -->
+    <div class="card bg-white shadow-xl rounded-2xl overflow-hidden border
+                flex flex-col md:flex-row
+                transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-[#0F172A]">
+
+      <img src="images/img13.avif"
+           class="w-full md:w-2/5 lg:w-1/3 h-64 md:h-auto object-cover">
+
+      <div class="p-8 md:w-3/5 lg:w-2/3">
+        <h3 class="text-2xl font-bold text-[#0F172A] mb-4">Starting a Business</h3>
+        <p class="text-sm text-[#0F172A]/80 mb-3">
+          Legal steps to launch a company.
+        </p>
+        <p class="text-sm text-[#0F172A]/70 mb-4">
+          Ensures long-term stability and compliance.
+        </p>
+        <ul class="list-disc pl-5 text-sm text-[#0F172A]/80 space-y-1">
+          <li>Business Structure</li>
+          <li>Registration</li>
+          <li>Tax Setup</li>
+          <li>Licenses</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+                    },
+                },
+            },
+        }
+    </script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>

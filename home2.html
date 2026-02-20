@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home2 - Groww Legal</title>
+    <link rel="icon" href="images/logo.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* RTL */
+        .rtl {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .title {
+            margin-right: 20px !important;
+        }
+
+        /* THEME TOGGLE */
+        :root {
+            --home-bg: #ffffff;
+            --text-color: #111111;
+        }
+
+        [data-theme="dark"] {
+            --home-bg: #000000;
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--home-bg) !important;
+            color: var(--text-color);
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        [data-theme="dark"] section,
+        [data-theme="dark"] .card {
+            background-color: #000000 !important;
+        }
+
+        [data-theme="dark"] .btn,
+        [data-theme="dark"] .btn1:hover {
+            color: #000000 !important;
+        }
+        [data-theme="dark"] .icon{
+            color: white !important;
+        }
+
+        [data-theme="dark"] body,
+        [data-theme="dark"] p,
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] span,
+        [data-theme="dark"] li,
+        [data-theme="dark"] a,
+        [data-theme="dark"] label,
+        [data-theme="dark"] small,
+        [data-theme="dark"] strong {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- navbar -->
+    <div id="navbar"></div>
+    <!-- HERO BANNER -->
+    <section class="relative min-h-screen flex items-center justify-center text-center">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="images/bg1.avif" alt="Law Firm" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-[#0F172A]/80"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-6">
+
+            <!-- Small Tagline -->
+            <p class="text-[#CBD5E1] uppercase tracking-widest mb-4 text-sm md:text-base">
+                Trusted Legal Experts
+            </p>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+                Protecting Your Rights <br>
+                With Integrity & Excellence
+            </h1>
+
+            <!-- Description -->
+            <p class="text-gray-300 text-base sm:text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                Groww Legal provides professional legal consultation and
+                representation with complete confidentiality and transparency.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                <!-- Primary Button -->
+                <a href="about.html" class="btn bg-[#CBD5E1] text-[#0F172A] px-8 py-3 rounded-full 
+                font-semibold hover:bg-white transition duration-300 shadow-lg">
+                    view more
+                </a>
+
+                <!-- Secondary Button -->
+                <a href="blog.html" class="btn1 border border-[#CBD5E1] text-white px-8 py-3 rounded-full 
+                font-semibold hover:bg-[#CBD5E1] hover:text-[#0F172A] 
+                transition duration-300">
+                    Our blog
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SECTION1 -->
+    <section class="relative bg-white py-20 md:py-28 overflow-hidden">
+
+        <!-- Background Accent -->
+        <div class="absolute top-0 right-0 w-72 h-72 bg-[#CBD5E1]/30 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Content -->
+                <div>
+
+                    <!-- Small Label -->
+                    <span class="text-sm font-semibold tracking-widest text-[#0F172A] uppercase">
+                        About Us
+                    </span>
+
+                    <!-- Heading -->
+                    <h2 class="mt-4 text-4xl md:text-5xl font-bold text-[#0F172A] leading-tight">
+                        Trusted Legal Expertise <br>
+                        For Individuals & Businesses
+                    </h2>
+
+                    <!-- Description -->
+                    <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                        At <span class="font-semibold text-[#0F172A]">Groww Legal</span>,
+                        we deliver strategic, result-driven legal solutions tailored to your needs.
+                        Our experienced attorneys combine deep legal knowledge with practical insight
+                        to protect your rights and secure your future.
+                    </p>
+
+                    <!-- Feature Points -->
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 flex items-center justify-center bg-[#0F172A] text-white rounded-full text-sm">
+                                ✓
+                            </div>
+                            <p class="text-gray-700">Client-focused and confidential representation</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 flex items-center justify-center bg-[#0F172A] text-white rounded-full text-sm">
+                                ✓
+                            </div>
+                            <p class="text-gray-700">Strategic legal planning and advisory</p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-6 h-6 flex items-center justify-center bg-[#0F172A] text-white rounded-full text-sm">
+                                ✓
+                            </div>
+                            <p class="text-gray-700">Transparent processes and professional integrity</p>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="mt-10">
+                        <a href="about.html" class="btn1 inline-flex items-center gap-2 bg-[#0F172A] text-white px-8 py-3 rounded-full 
+                    font-medium tracking-wide transition duration-300 
+                    hover:bg-[#CBD5E1] hover:text-[#0F172A] shadow-lg hover:shadow-xl">
+                            Discover More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Main Image -->
+                <!-- Image Wrapper -->
+                <div class="relative">
+                    <img src="images/img4.avif" alt="Groww Legal Office" class="w-full 
+              h-[350px] 
+              sm:h-[400px] 
+              md:h-[500px] 
+              lg:h-[600px] 
+              object-cover 
+              rounded-3xl 
+              shadow-2xl">
+                </div>
+
+
+            </div>
+    </section>
+
+    <!-- SECTION2 -->
+   <section class="bg-[#0F172A] py-14 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="max-w-2xl mb-12">
+            <span class="text-xs font-semibold tracking-widest text-[#F8FAFC] uppercase">
+                Our Expertise
+            </span>
+
+            <h2 class="mt-3 text-3xl md:text-4xl font-bold text-[#F8FAFC]">
+                Areas of Practice
+            </h2>
+
+            <p class="mt-4 text-gray-400">
+                Strategic legal services delivered with precision and professionalism.
+            </p>
+        </div>
+
+        <!-- Practice List -->
+        <div class="divide-y divide-slate-700">
+
+            <!-- Item -->
+            <div class="group flex items-start gap-5 py-6 px-3
+                        transition duration-300
+                        hover:bg-slate-800 hover:translate-x-2 rounded-lg">
+
+                <div class="w-10 h-10 flex items-center justify-center
+                            bg-slate-700 rounded-lg shrink-0
+                            transition duration-300
+                            group-hover:bg-[#F8FAFC]">
+
+                    <i class="fa-solid fa-scale-balanced text-[#F8FAFC]
+                              group-hover:text-[#0F172A] transition duration-300"></i>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-[#F8FAFC]">
+                        Corporate Law
+                    </h3>
+                    <p class="mt-2 text-gray-400 text-sm">
+                        Compliance, governance, mergers and acquisitions advisory.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- 2 -->
+            <div class="group flex items-start gap-5 py-6 px-3
+                        transition duration-300
+                        hover:bg-slate-800 hover:translate-x-2 rounded-lg">
+
+                <div class="w-10 h-10 flex items-center justify-center
+                            bg-slate-700 rounded-lg shrink-0
+                            transition duration-300
+                            group-hover:bg-[#F8FAFC]">
+
+                    <i class="fa-solid fa-shield-halved text-[#F8FAFC]
+                              group-hover:text-[#0F172A] transition duration-300"></i>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-[#F8FAFC]">
+                        Criminal Defense
+                    </h3>
+                    <p class="mt-2 text-gray-400 text-sm">
+                        Strategic defense representation for criminal cases.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 3 -->
+            <div class="group flex items-start gap-5 py-6 px-3
+                        transition duration-300
+                        hover:bg-slate-800 hover:translate-x-2 rounded-lg">
+
+                <div class="w-10 h-10 flex items-center justify-center
+                            bg-slate-700 rounded-lg shrink-0
+                            transition duration-300
+                            group-hover:bg-[#F8FAFC]">
+
+                    <i class="fa-solid fa-gavel text-[#F8FAFC]
+                              group-hover:text-[#0F172A] transition duration-300"></i>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-[#F8FAFC]">
+                        Civil Litigation
+                    </h3>
+                    <p class="mt-2 text-gray-400 text-sm">
+                        Representation in disputes, arbitration and court matters.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 4 -->
+            <div class="group flex items-start gap-5 py-6 px-3
+                        transition duration-300
+                        hover:bg-slate-800 hover:translate-x-2 rounded-lg">
+
+                <div class="w-10 h-10 flex items-center justify-center
+                            bg-slate-700 rounded-lg shrink-0
+                            transition duration-300
+                            group-hover:bg-[#F8FAFC]">
+
+                    <i class="fa-solid fa-building text-[#F8FAFC]
+                              group-hover:text-[#0F172A] transition duration-300"></i>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-[#F8FAFC]">
+                        Real Estate Law
+                    </h3>
+                    <p class="mt-2 text-gray-400 text-sm">
+                        Property transactions, documentation and legal review.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 5 -->
+            <div class="group flex items-start gap-5 py-6 px-3
+                        transition duration-300
+                        hover:bg-slate-800 hover:translate-x-2 rounded-lg">
+
+                <div class="w-10 h-10 flex items-center justify-center
+                            bg-slate-700 rounded-lg shrink-0
+                            transition duration-300
+                            group-hover:bg-[#F8FAFC]">
+
+                    <i class="fa-solid fa-people-group text-[#F8FAFC]
+                              group-hover:text-[#0F172A] transition duration-300"></i>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-[#F8FAFC]">
+                        Family Law
+                    </h3>
+                    <p class="mt-2 text-gray-400 text-sm">
+                        Divorce, custody and family dispute resolution.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 6 -->
+            <div class="group flex items-start gap-5 py-6 px-3
+                        transition duration-300
+                        hover:bg-slate-800 hover:translate-x-2 rounded-lg">
+
+                <div class="w-10 h-10 flex items-center justify-center
+                            bg-slate-700 rounded-lg shrink-0
+                            transition duration-300
+                            group-hover:bg-[#F8FAFC]">
+
+                    <i class="fa-solid fa-file-contract text-[#F8FAFC]
+                              group-hover:text-[#0F172A] transition duration-300"></i>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-[#F8FAFC]">
+                        Contract Law
+                    </h3>
+                    <p class="mt-2 text-gray-400 text-sm">
+                        Drafting, reviewing and enforcing commercial agreements.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SECTION3 -->
+  <section class="py-20 bg-[#F8FAFC]">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold text-[#0F172A] mb-4">
+      Our Case Results Speak
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-16">
+      We have successfully handled hundreds of cases with proven results and satisfied clients.
+    </p>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Card 1 -->
+      <div class="card group bg-white p-8 rounded-2xl border border-gray-200
+                  hover:bg-[#0F172A] hover:text-white
+                  hover:-translate-y-2 hover:shadow-2xl
+                  transition-all duration-300">
+
+        <div class="icon text-[#0F172A] text-4xl mb-4
+                    group-hover:text-white
+                    group-hover:scale-110 transition">
+          <i class="bi bi-briefcase-fill"></i>
+        </div>
+
+        <h3 class="text-4xl font-bold mb-2">500+</h3>
+        <p class="text-gray-600 group-hover:text-gray-300">Cases Won</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card group bg-white p-8 rounded-2xl border border-gray-200
+                  hover:bg-[#0F172A] hover:text-white
+                  hover:-translate-y-2 hover:shadow-2xl
+                  transition-all duration-300">
+
+        <div class="icon text-[#0F172A] text-4xl mb-4
+                    group-hover:text-white
+                    group-hover:scale-110 transition">
+          <i class="bi bi-people-fill"></i>
+        </div>
+
+        <h3 class="text-4xl font-bold mb-2">1,200+</h3>
+        <p class="text-gray-600 group-hover:text-gray-300">Happy Clients</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card group bg-white p-8 rounded-2xl border border-gray-200
+                  hover:bg-[#0F172A] hover:text-white
+                  hover:-translate-y-2 hover:shadow-2xl
+                  transition-all duration-300">
+
+        <div class="icon text-[#0F172A] text-4xl mb-4
+                    group-hover:text-white
+                    group-hover:scale-110 transition">
+          <i class="bi bi-award-fill"></i>
+        </div>
+
+        <h3 class="text-4xl font-bold mb-2">25+</h3>
+        <p class="text-gray-600 group-hover:text-gray-300">Years Experience</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card group bg-white p-8 rounded-2xl border border-gray-200
+                  hover:bg-[#0F172A] hover:text-white
+                  hover:-translate-y-2 hover:shadow-2xl
+                  transition-all duration-300">
+
+        <div class="icon text-[#0F172A] text-4xl mb-4
+                    group-hover:text-white
+                    group-hover:scale-110 transition">
+          <i class="bi bi-shield-lock-fill"></i>
+        </div>
+
+        <h3 class="text-4xl font-bold mb-2">100%</h3>
+        <p class="text-gray-600 group-hover:text-gray-300">Confidentiality</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- SECTION4 -->
+ <section class="bg-[#0F172A] py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#F8FAFC]">
+        Our Legal Process
+      </h2>
+      <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+        A structured and strategic approach to protect your rights and achieve successful outcomes.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-4 gap-10 text-center">
+
+      <!-- Step 1 -->
+      <div class="group">
+        <div class="w-16 h-16 mx-auto flex items-center justify-center 
+                    rounded-full bg-slate-800 border border-slate-600
+                    text-[#F8FAFC] text-xl font-bold
+                    group-hover:bg-[#F8FAFC] 
+                    group-hover:text-[#0F172A]
+                    transition duration-300">
+          01
+        </div>
+
+        <h3 class="mt-6 text-lg font-semibold text-[#F8FAFC]">
+          Consultation
+        </h3>
+        <p class="mt-3 text-gray-400 text-sm">
+          Understanding your legal situation and evaluating possible strategies.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="group">
+        <div class="w-16 h-16 mx-auto flex items-center justify-center 
+                    rounded-full bg-slate-800 border border-slate-600
+                    text-[#F8FAFC] text-xl font-bold
+                    group-hover:bg-[#F8FAFC] 
+                    group-hover:text-[#0F172A]
+                    transition duration-300">
+          02
+        </div>
+
+        <h3 class="mt-6 text-lg font-semibold text-[#F8FAFC]">
+          Case Evaluation
+        </h3>
+        <p class="mt-3 text-gray-400 text-sm">
+          Detailed analysis of documents, evidence, and legal standing.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="group">
+        <div class="w-16 h-16 mx-auto flex items-center justify-center 
+                    rounded-full bg-slate-800 border border-slate-600
+                    text-[#F8FAFC] text-xl font-bold
+                    group-hover:bg-[#F8FAFC] 
+                    group-hover:text-[#0F172A]
+                    transition duration-300">
+          03
+        </div>
+
+        <h3 class="mt-6 text-lg font-semibold text-[#F8FAFC]">
+          Legal Strategy
+        </h3>
+        <p class="mt-3 text-gray-400 text-sm">
+          Developing a strong legal approach tailored to your case.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="group">
+        <div class="w-16 h-16 mx-auto flex items-center justify-center 
+                    rounded-full bg-slate-800 border border-slate-600
+                    text-[#F8FAFC] text-xl font-bold
+                    group-hover:bg-[#F8FAFC] 
+                    group-hover:text-[#0F172A]
+                    transition duration-300">
+          04
+        </div>
+
+        <h3 class="mt-6 text-lg font-semibold text-[#F8FAFC]">
+          Resolution
+        </h3>
+        <p class="mt-3 text-gray-400 text-sm">
+          Negotiation, settlement, or courtroom representation.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION5 -->
+
+ <section class="bg-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left Content -->
+      <div>
+        <span class="text-xs font-semibold tracking-widest text-[#0F172A] uppercase">
+          Why Choose Us
+        </span>
+
+        <h2 class="mt-4 text-3xl md:text-4xl font-bold text-[#0F172A] leading-tight">
+          Dedicated To Protecting <br>
+          Your Rights & Interests
+        </h2>
+
+        <p class="mt-6 text-gray-600 leading-relaxed">
+          At Groww Legal, we combine deep legal expertise with strategic thinking 
+          to provide practical and result-driven legal solutions tailored to 
+          individuals and businesses.
+        </p>
+
+        <a href="about.html"
+           class="btn1 inline-block mt-8 bg-[#0F172A] text-white px-6 py-3 rounded-lg
+                  hover:bg-[#CBD5E1] hover:text-[#0F172A] transition duration-300">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Right Features -->
+      <div class="space-y-6">
+
+        <!-- Feature 1 -->
+        <div class="card flex gap-4 p-5 bg-white rounded-xl shadow-sm 
+                    hover:shadow-md transition duration-300">
+
+          <div class="w-12 h-12 flex items-center justify-center 
+                      bg-[#CBD5E1] rounded-lg shrink-0">
+            <i class="fa-solid fa-user-tie text-[#0F172A]"></i>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-[#0F172A]">
+              Experienced Attorneys
+            </h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Skilled legal professionals with years of courtroom experience.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card flex gap-4 p-5 bg-white rounded-xl shadow-sm 
+                    hover:shadow-md transition duration-300">
+
+          <div class="w-12 h-12 flex items-center justify-center 
+                      bg-[#CBD5E1] rounded-lg shrink-0">
+            <i class="fa-solid fa-lock text-[#0F172A]"></i>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-[#0F172A]">
+              Confidential & Secure
+            </h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Your privacy and legal matters are handled with utmost discretion.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card flex gap-4 p-5 bg-white rounded-xl shadow-sm 
+                    hover:shadow-md transition duration-300">
+
+          <div class="w-12 h-12 flex items-center justify-center 
+                      bg-[#CBD5E1] rounded-lg shrink-0">
+            <i class="fa-solid fa-chart-line text-[#0F172A]"></i>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-[#0F172A]">
+              Proven Track Record
+            </h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Successful case outcomes and trusted by numerous clients.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card flex gap-4 p-5 bg-white rounded-xl shadow-sm 
+                    hover:shadow-md transition duration-300">
+
+          <div class="w-12 h-12 flex items-center justify-center 
+                      bg-[#CBD5E1] rounded-lg shrink-0">
+            <i class="fa-solid fa-handshake text-[#0F172A]"></i>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-[#0F172A]">
+              Client-Centered Approach
+            </h4>
+            <p class="text-sm text-gray-600 mt-1">
+              Personalized strategies focused on achieving your legal goals.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION6 -->
+ <section class="py-20 bg-[#F8FAFC]">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-5xl font-bold text-[#0F172A] leading-tight">
+      Protect Your Rights With Trusted Legal Experts
+    </h2>
+
+    <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+      Our experienced legal team is ready to provide strategic guidance and strong representation. 
+      Schedule your consultation today.
+    </p>
+
+    <!-- Buttons -->
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-6">
+      <a href="contact"
+         class="bg-[#0F172A] text-[#F8FAFC] px-8 py-4 rounded-xl font-semibold
+                hover:bg-slate-800 hover:scale-105
+                transition-all duration-300 shadow-lg">
+        Contact our team
+      </a>
+    </div>
+
+  </div>
+</section>
+
+    <div id="footer"></div>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+                    },
+                },
+            },
+        }
+    </script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>
