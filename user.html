@@ -21,6 +21,7 @@
         [data-theme="dark"] * {
             color: #ffffff !important;
         }
+
         [data-theme="dark"] .title:hover {
             color: black !important;
         }
@@ -94,6 +95,11 @@
         .students-table thead {
             color: #6b7280;
         }
+
+        html[dir="rtl"] #profileMenu {
+            right: auto !important;
+            left: 0 !important;
+        }
     </style>
 </head>
 
@@ -115,6 +121,8 @@
                     class="bi bi-calendar-event-fill"></i> Upcoming Hearings</a>
             <a class="title flex gap-3 p-3 rounded hover:bg-orange-100 text-white hover:text-black"><i
                     class="bi bi-chat-dots-fill"></i> Messages</a>
+            <a href="login.html" class="flex gap-3 p-3 rounded hover:bg-orange-100 text-white hover:text-black"><i
+                    class="bi bi-box-arrow-right"></i> Logout</a>
             <div class="md:hidden border-t border-white/30 pt-4 space-y-3">
                 <button onclick="toggleTheme()"
                     class="w-full bg-black/30 py-2 rounded-lg flex justify-center items-center gap-2 text-white"><i
@@ -122,6 +130,22 @@
                 <button onclick="toggleRTL()"
                     class="w-full bg-green-600 py-2 rounded-lg flex justify-center items-center gap-2"><i
                         class="bi bi-arrow-left-right"></i> RTL</button>
+                <div class="relative md:hidden mb-6">
+
+                    <button onclick="toggleProfileMobile()"
+                        class="w-10 h-10 flex items-center justify-center bg-white text-[#0F172A] rounded-full text-lg font-semibold">
+                        <i class="bi bi-person-fill"></i>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div id="profileMenuMobile" class="hidden mt-3 w-32 bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-4 py-3 text-gray-700 border-t">
+                            <p class="font-semibold text-[#0F172A]">Lia Johnson</p>
+                            <p class="text-sm text-gray-500">Client ID: CL-1024</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </nav>
     </div>
@@ -141,115 +165,173 @@
                     <button onclick="toggleTheme()"
                         class="bg-[#0F172A] text-white px-3 py-2 rounded-lg flex items-center gap-1"><i
                             class="bi bi-moon-fill"></i></button>
+                    <!-- Profile -->
+                    <div class="relative hidden md:block">
+                        <button onclick="toggleProfile()"
+                            class="w-10 h-10 flex items-center justify-center bg-[#0F172A] text-white rounded-full text-lg font-semibold">
+                            <i class="bi bi-person-fill"></i>
+                        </button>
+
+                        <!-- Dropdown -->
+                        <div id="profileMenu"
+                            class="hidden absolute mt-2 w-40 bg-white rounded-lg shadow-lg overflow-hidden"
+                            style="right: 0;">
+                            <div class="px-4 py-3 text-gray-700 border-t">
+                                <p class="font-semibold text-[#0F172A]">Lia Johnson</p>
+                                <p class="text-sm text-gray-500">Client ID: CL-1024</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Mobile menu button -->
                 <button onclick="toggleSidebar()" class="md:hidden text-2xl"><i class="bi bi-list"></i></button>
             </div>
         </div>
 
-        <main class="p-6 space-y-6 md:space-y-8">
+        <main class="p-6 space-y-8">
+
             <!-- Welcome Section -->
-            <div
-                class="bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white rounded-2xl p-6 flex flex-col md:flex-row md:justify-between items-center gap-6">
-                <div>
-                    <h1 class="text-2xl md:text-3xl font-bold">Welcome back, lia</h1>
-                    <p>Here’s an overview of your cases and hearings.</p>
-                </div>
-                <img src="images/client1.jpg" class="rounded-full border-4 border-white w-24 h-24">
+            <div class="bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white rounded-2xl p-8 shadow-lg">
+                <h1 class="text-3xl font-bold">Legal Case Overview</h1>
+                <p class="mt-2 text-gray-300">Track your ongoing legal matters, court hearings, and communications.</p>
             </div>
 
-            <!-- Stats -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                <div class="card bg-white p-5 rounded-xl shadow">
-                    <p>Active Cases</p>
-                    <h2 class="text-3xl font-bold text-[#0F172A]">3</h2>
+            <!-- Legal Statistics -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="card bg-white p-6 rounded-2xl shadow border-l-4 border-blue-600">
+                    <p class="text-gray-500">Active Cases</p>
+                    <h2 class="text-3xl font-bold text-blue-600 mt-2">3</h2>
+                    <p class="text-sm text-gray-400 mt-1">Currently in progress</p>
                 </div>
-                <div class="card bg-white p-5 rounded-xl shadow">
-                    <p>Upcoming Hearings</p>
-                    <h2 class="text-3xl font-bold text-orange-600">2</h2>
+
+                <div class="card bg-white p-6 rounded-2xl shadow border-l-4 border-orange-500">
+                    <p class="text-gray-500">Upcoming Hearings</p>
+                    <h2 class="text-3xl font-bold text-orange-500 mt-2">2</h2>
+                    <p class="text-sm text-gray-400 mt-1">Scheduled this week</p>
                 </div>
-                <div class="card bg-white p-5 rounded-xl shadow">
-                    <p>Messages</p>
-                    <h2 class="text-3xl font-bold text-blue-600">5</h2>
+
+                <div class="card bg-white p-6 rounded-2xl shadow border-l-4 border-green-600">
+                    <p class="text-gray-500">Closed Cases</p>
+                    <h2 class="text-3xl font-bold text-green-600 mt-2">10</h2>
+                    <p class="text-sm text-gray-400 mt-1">Successfully resolved</p>
                 </div>
-                <div class="card bg-white p-5 rounded-xl shadow">
-                    <p>Closed Cases</p>
-                    <h2 class="text-3xl font-bold text-green-600">10</h2>
+
+                <div class="card bg-white p-6 rounded-2xl shadow border-l-4 border-red-600">
+                    <p class="text-gray-500">High Priority</p>
+                    <h2 class="text-3xl font-bold text-red-600 mt-2">1</h2>
+                    <p class="text-sm text-gray-400 mt-1">Urgent attention required</p>
                 </div>
+
             </div>
 
-            <!-- Upcoming Hearings -->
+            <!-- Case Progress Section -->
             <div class="card bg-white rounded-2xl shadow p-6">
-                <h2 class="text-2xl font-bold text-[#0F172A] mb-4">Upcoming Hearings</h2>
-                <ul class="space-y-3">
-                    <li class="flex justify-between"><span>Corporate Case</span><span>10:00 AM</span></li>
-                    <li class="flex justify-between"><span>Family Law Consultation</span><span>1:00 PM</span></li>
-                </ul>
-            </div>
+                <h2 class="text-2xl font-bold text-[#0F172A] mb-6">Case Progress Tracking</h2>
 
-            <!-- My Cases -->
-            <div class="card bg-white rounded-2xl shadow p-6">
-                <h2 class="text-2xl font-bold text-green-600 mb-4">My Cases</h2>
+                <div class="space-y-6">
 
-                <!-- Mobile Cards -->
-                <div class="block md:hidden space-y-4">
-                    <div class="card bg-gray-50 p-4 rounded-lg shadow">
-                        <p><span class="font-semibold">Case:</span> Corporate</p>
-                        <p><span class="font-semibold">Status:</span> Active</p>
-                        <p><span class="font-semibold">Next Hearing:</span> 10:00 AM</p>
+                    <!-- Case 1 -->
+                    <div class="border rounded-xl p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h3 class="font-bold text-lg">Corporate Compliance Case</h3>
+                                <p class="text-sm text-gray-500">Case Type: Corporate Law</p>
+                            </div>
+                            <span class="card bg-red-100 text-red-600 px-3 py-1 text-sm rounded-full">High
+                                Priority</span>
+                        </div>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 65%;"></div>
+                        </div>
+
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Status: Active</span>
+                            <span>65% Completed</span>
+                        </div>
                     </div>
-                    <div class="card bg-gray-50 p-4 rounded-lg shadow">
-                        <p><span class="font-semibold">Case:</span> Family</p>
-                        <p><span class="font-semibold">Status:</span> Pending</p>
-                        <p><span class="font-semibold">Next Hearing:</span> 1:00 PM</p>
-                    </div>
-                </div>
 
-                <!-- Desktop / Tablet Table -->
-                <div class="hidden md:block">
-                    <table class="w-full students-table">
-                        <thead>
-                            <tr>
-                                <th>Case</th>
-                                <th>Status</th>
-                                <th>Next Hearing</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Corporate</td>
-                                <td>Active</td>
-                                <td>10:00 AM</td>
-                            </tr>
-                            <tr>
-                                <td>Family</td>
-                                <td>Pending</td>
-                                <td>1:00 PM</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <!-- Case 2 -->
+                    <div class="border rounded-xl p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <div>
+                                <h3 class="font-bold text-lg">Family Settlement Dispute</h3>
+                                <p class="text-sm text-gray-500">Case Type: Family Law</p>
+                            </div>
+                            <span class="card bg-yellow-100 text-yellow-600 px-3 py-1 text-sm rounded-full">Medium
+                                Priority</span>
+                        </div>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                            <div class="bg-orange-500 h-2 rounded-full" style="width: 40%;"></div>
+                        </div>
+
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span>Status: Pending</span>
+                            <span>40% Completed</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Messages -->
+            <!-- Upcoming Court Hearings -->
             <div class="card bg-white rounded-2xl shadow p-6">
-                <h2 class="text-2xl font-bold text-blue-600 mb-4">Messages</h2>
-                <ul class="space-y-3">
-                    <li class="flex justify-between items-center border-b pb-2">
+                <h2 class="text-2xl font-bold text-[#0F172A] mb-6">Scheduled Court Hearings</h2>
+
+                <div class="space-y-4">
+
+                    <div class="flex justify-between items-center border rounded-lg p-4">
                         <div>
-                            <p class="font-semibold">Lawyer A</p>
-                            <p class="text-gray-500 text-sm">Your document has been reviewed.</p>
+                            <h3 class="font-semibold">Corporate Compliance Case</h3>
+                            <p class="text-sm text-gray-500">Supreme Court • Case Ref: CC-2031</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-semibold text-blue-600">10:00 AM</p>
+                            <p class="text-sm text-gray-500">March 18, 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center border rounded-lg p-4">
+                        <div>
+                            <h3 class="font-semibold">Family Settlement Dispute</h3>
+                            <p class="text-sm text-gray-500">District Court • Case Ref: FL-7782</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-semibold text-blue-600">1:00 PM</p>
+                            <p class="text-sm text-gray-500">March 20, 2026</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Legal Messages -->
+            <div class="card bg-white rounded-2xl shadow p-6">
+                <h2 class="text-2xl font-bold text-[#0F172A] mb-6">Client & Lawyer Communications</h2>
+
+                <div class="space-y-4">
+
+                    <div
+                        class="card flex justify-between items-center border-l-4 border-blue-600 bg-gray-50 p-4 rounded-lg">
+                        <div>
+                            <p class="font-semibold">Senior Advocate - John Smith</p>
+                            <p class="text-sm text-gray-500">Your affidavit draft has been reviewed and approved.</p>
                         </div>
                         <span class="text-blue-600 font-semibold text-sm">New</span>
-                    </li>
-                    <li class="flex justify-between items-center border-b pb-2">
+                    </div>
+
+                    <div
+                        class="card flex justify-between items-center border-l-4 border-orange-500 bg-gray-50 p-4 rounded-lg">
                         <div>
-                            <p class="font-semibold">Lawyer B</p>
-                            <p class="text-gray-500 text-sm">Hearing scheduled for tomorrow.</p>
+                            <p class="font-semibold">Legal Assistant</p>
+                            <p class="text-sm text-gray-500">Additional documents required before next hearing.</p>
                         </div>
-                        <span class="text-blue-600 font-semibold text-sm">New</span>
-                    </li>
-                </ul>
+                        <span class="text-orange-500 font-semibold text-sm">Important</span>
+                    </div>
+
+                </div>
             </div>
 
         </main>
@@ -267,6 +349,12 @@
         function toggleRTL() {
             const html = document.documentElement;
             html.dir = html.dir === "rtl" ? "ltr" : "rtl";
+        }
+        function toggleProfile() {
+            document.getElementById("profileMenu").classList.toggle("hidden");
+        }
+        function toggleProfileMobile() {
+            document.getElementById("profileMenuMobile").classList.toggle("hidden");
         }
     </script>
 </body>

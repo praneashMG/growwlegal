@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- ABOUT -->
       <div>
-        <h3 class="text-2xl font-bold mb-4 text-[#CBD5E1]">
+        <h3 class="text-2xl font-bold mb-4 text-white">
           Groww Legal
         </h3>
         <p class="text-gray-400 text-sm leading-relaxed">

@@ -59,7 +59,8 @@
     [data-theme="dark"] a,
     [data-theme="dark"] label,
     [data-theme="dark"] small,
-    [data-theme="dark"] strong {
+    [data-theme="dark"] strong,
+    [data-theme="dark"] .title {
       color: #ffffff !important;
     }
     @media (max-width:821px){
@@ -394,14 +395,23 @@
 <!-- SECTION3 -->
 <section class="bg-[#1E293B] py-16 md:py-24">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <!-- Firm Philosophy Section -->
+
+    <!-- Section Title (Now Properly Centered) -->
+    <div class="text-center mb-14">
+      <h3 class="text-3xl md:text-4xl font-bold text-white">
+        Our Philosophy
+      </h3>
+      <div class="w-20 h-1 bg-[#CBD5E1] mx-auto mt-4 rounded"></div>
+    </div>
+
     <div class="flex flex-col lg:flex-row gap-12 items-center">
       
-      <!-- Left Content - Philosophy Text -->
+      <!-- Left Content -->
       <div class="flex-1">
-        <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">Our Philosophy</h3>
-        
+
         <div class="space-y-6">
+          
+          <!-- Item 1 -->
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="w-10 h-10 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center">
@@ -416,6 +426,7 @@
             </div>
           </div>
 
+          <!-- Item 2 -->
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="w-10 h-10 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center">
@@ -430,6 +441,7 @@
             </div>
           </div>
 
+          <!-- Item 3 -->
           <div class="flex gap-4">
             <div class="flex-shrink-0">
               <div class="w-10 h-10 bg-[#CBD5E1]/10 rounded-lg flex items-center justify-center">
@@ -443,9 +455,9 @@
               <p class="text-gray-400">Every case receives personalized attention. We take time to understand your unique situation and goals.</p>
             </div>
           </div>
-        </div>
 
-        <!-- Founders Quote -->
+        </div>
+<!-- Founders Quote -->
         <div class="mt-8 p-6 bg-[#0F172A] rounded-lg border-l-4 border-[#CBD5E1]">
           <p class="text-gray-300 italic text-base md:text-lg">"Justice isn't just about winning cases—it's about making a lasting difference in our clients' lives. That principle has guided us for 25 years."</p>
           <div class="mt-4 flex items-center gap-3">
@@ -464,10 +476,9 @@
         </div>
       </div>
 
-      <!-- Right Content - Image with Milestones -->
+      <!-- Right Image -->
       <div class="flex-1 w-full">
         <div class="relative">
-          <!-- Main Image -->
           <div class="bg-gradient-to-br from-[#CBD5E1] to-[#9AA8B9] p-1 rounded-lg shadow-2xl">
             <div class="bg-[#0F172A] p-2 rounded-lg">
               <img 
@@ -480,19 +491,12 @@
           </div>
         </div>
       </div>
+
     </div>
 
-    <!-- Bottom CTA -->
-    <div class="text-center mt-20 md:mt-24">
-      <a href="about.html" class="btn inline-flex items-center justify-center bg-[#CBD5E1] hover:bg-white text-[#0F172A] font-semibold px-8 py-4 rounded-md transition duration-300 shadow-lg shadow-[#CBD5E1]/20">
-        Learn More About Our History
-        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </a>
-    </div>
   </div>
 </section>
+
 <!-- SECTION4 -->
  <!-- Featured Attorneys Component -->
 <section class="bg-white py-16 md:py-24">
@@ -543,8 +547,8 @@
         </div>
         <!-- Name below image (visible on mobile) -->
         <div class="mt-4 text-center lg:hidden">
-          <div class="text-white font-bold text-lg">John Mitchell</div>
-          <div class="text-[#CBD5E1] text-sm">Senior Partner</div>
+          <div class="title text-black font-bold text-lg">John Mitchell</div>
+          <div class="title text-black text-sm">Senior Partner</div>
         </div>
       </div>
 
@@ -582,8 +586,8 @@
           </div>
         </div>
         <div class="mt-4 text-center lg:hidden">
-          <div class="text-white font-bold text-lg">Sarah Chen</div>
-          <div class="text-[#CBD5E1] text-sm">Partner</div>
+          <div class="title text-black font-bold text-lg">Sarah Chen</div>
+          <div class="title text-black text-sm">Partner</div>
         </div>
       </div>
 
@@ -621,8 +625,8 @@
           </div>
         </div>
         <div class="mt-4 text-center lg:hidden">
-          <div class="text-white font-bold text-lg">Michael Roberts</div>
-          <div class="text-[#CBD5E1] text-sm">Senior Associate</div>
+          <div class="title text-black font-bold text-lg">Michael Roberts</div>
+          <div class="title text-black text-sm">Senior Associate</div>
         </div>
       </div>
 
@@ -660,8 +664,8 @@
           </div>
         </div>
         <div class="mt-4 text-center lg:hidden">
-          <div class="text-white font-bold text-lg">Emily Rodriguez</div>
-          <div class="text-[#CBD5E1] text-sm">Associate</div>
+          <div class="title text-black font-bold text-lg">Emily Rodriguez</div>
+          <div class="title text-black text-sm">Associate</div>
         </div>
       </div>
     </div>
