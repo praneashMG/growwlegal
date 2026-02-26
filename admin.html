@@ -125,7 +125,7 @@
     <div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
     <div id="sidebar" class="sidebar flex flex-col p-6 shadow-xl">
         <div class="flex justify-between items-center mb-10">
-            <h1 class="text-2xl font-bold text-[#CBD5E1]">
+            <h1 class="text-2xl font-bold text-white">
                 <a href="index.html">Groww Legal</a>
             </h1>
             <button onclick="toggleSidebar()" class="md:hidden text-2xl text-white">✖</button>
@@ -139,8 +139,6 @@
                     class="bi bi-people-fill"></i> Clients</a>
             <a class="flex gap-3 p-3 rounded hover:bg-orange-100 text-white hover:text-black"><i
                     class="bi bi-calendar-event-fill"></i> Appointments</a>
-            <a class="flex gap-3 p-3 rounded hover:bg-orange-100 text-white hover:text-black"><i
-                    class="bi bi-chat-dots-fill"></i> Messages</a>
             <a class="flex gap-3 p-3 rounded hover:bg-orange-100 text-white hover:text-black"><i
                     class="bi bi-gear-fill"></i> Settings</a>
             <a href="login.html" class="flex gap-3 p-3 rounded hover:bg-orange-100 text-white hover:text-black"><i
@@ -156,12 +154,12 @@
                 <div class="relative md:hidden mb-6">
 
                     <button onclick="toggleProfileMobile()"
-                        class="w-10 h-10 flex items-center justify-center bg-white text-[#0F172A] rounded-full text-lg font-semibold">
+                        class="card w-10 h-10 flex items-center justify-center bg-white text-[#0F172A] rounded-full text-lg font-semibold">
                         <i class="bi bi-person-fill"></i>
                     </button>
 
                     <!-- Dropdown -->
-                    <div id="profileMenuMobile" class="hidden mt-3 w-32 bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div id="profileMenuMobile" class="card hidden mt-3 w-32 bg-white rounded-lg shadow-lg overflow-hidden">
                         <div class="px-4 py-3 text-gray-700 border-t">
                             <p class="font-semibold text-[#0F172A]">Ayesha Khan</p>
                             <p class="text-sm text-gray-500">Senior Legal Consultant</p>
@@ -186,13 +184,13 @@
                 <!-- Profile -->
                 <div class="relative hidden md:block">
                     <button onclick="toggleProfile()"
-                        class="w-10 h-10 flex items-center justify-center bg-[#0F172A] text-white rounded-full text-lg font-semibold">
+                        class="card w-10 h-10 flex items-center justify-center bg-[#0F172A] text-white rounded-full text-lg font-semibold">
                         <i class="bi bi-person-fill"></i>
                     </button>
 
                     <!-- Dropdown -->
                     <div id="profileMenu"
-                            class="hidden absolute mt-2 w-40 bg-white rounded-lg shadow-lg overflow-hidden"
+                            class="card hidden absolute mt-2 w-40 bg-white rounded-lg shadow-lg overflow-hidden"
                             style="right: 0;">
                         <div class="px-4 py-3 text-gray-700 border-t">
                             <p class="font-semibold text-[#0F172A]">Ayesha Khan</p>
